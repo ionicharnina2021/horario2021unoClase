@@ -8,8 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SQLite } from '@ionic-native/sqlite/ngx';
-import { SqliteDbCopy } from '@ionic-native/sqlite-db-copy/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +17,7 @@ import { SqliteDbCopy } from '@ionic-native/sqlite-db-copy/ngx';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },SQLite,SqliteDbCopy,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
 })

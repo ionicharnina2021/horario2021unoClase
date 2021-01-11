@@ -1,4 +1,3 @@
-import { DatosService } from "./../datos.service";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -7,12 +6,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["home.page.scss"],
 })
 export class HomePage implements OnInit {
-  constructor(private datosService: DatosService) {}
+  constructor() {}
   ngOnInit(): void {
     
   }
 
-  copia(){
-    this.datosService.copiarBBDD();
-  }
 }
